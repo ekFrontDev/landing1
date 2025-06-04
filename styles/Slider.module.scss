@@ -1,0 +1,232 @@
+.artSlider {
+  padding: 50px 0;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .slider {
+    width: 100vw;
+
+    :global(.slick-slider) {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+    }
+
+    :global(.slick-list) {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    :global(.slick-track) {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    :global(.slick-slide) {
+      padding: 0 15px;
+      box-sizing: border-box;
+      display: block;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+    }
+
+    .prevArrow,
+    .nextArrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      z-index: 1;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .prevArrow {
+      left: 20px;
+    }
+
+    .nextArrow {
+      right: 20px;
+    }
+
+    :global(.slick-dots) {
+      position: relative;
+      bottom: -30px;
+      display: flex !important;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin: 0 5px;
+
+        button {
+          width: 12px;
+          height: 12px;
+          padding: 0;
+          background: #ccc;
+          border: none;
+          border-radius: 50%;
+          opacity: 0.5;
+          cursor: pointer;
+
+          &::before {
+            content: '';
+          }
+        }
+
+        &.slick-active button {
+          background: #333;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 40px 0;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .slider {
+      :global(.slick-slide) {
+        padding: 0 12px;
+      }
+
+      :global(.slick-list) {
+        margin: 0;
+      }
+
+      .prevArrow,
+      .nextArrow {
+        width: 36px;
+        height: 36px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .prevArrow {
+        left: 15px;
+      }
+
+      .nextArrow {
+        right: 15px;
+      }
+
+      :global(.slick-dots) {
+        bottom: -25px;
+
+        li {
+          margin: 0 5px;
+
+          button {
+            width: 11px;
+            height: 11px;
+          }
+        }
+      }
+
+      .image {
+        max-height: 350px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 30px 0;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .slider {
+      width: 100vw;
+
+      :global(.slick-slider) {
+        touch-action: pan-y; /* Поддержка swipe-жестов */
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      :global(.slick-list) {
+        margin: 0;
+        width: 100vw;
+        overflow: hidden;
+      }
+
+      :global(.slick-slide) {
+        padding: 0; /* Убираем все отступы для полноэкранного вида */
+        width: 80vw; /* Уменьшаем ширину слайда для показа больше превью */
+      }
+
+      .prevArrow,
+      .nextArrow {
+        display: none; /* Скрываем стрелки на телефонах */
+      }
+
+      :global(.slick-dots) {
+        bottom: -20px;
+
+        li {
+          margin: 0 4px;
+
+          button {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+
+      .image {
+        width: 100%; /* Изображение занимает всю ширину слайда */
+        max-height: 300px;
+        object-fit: contain;
+      }
+    }
+  }
+}

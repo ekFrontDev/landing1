@@ -1,0 +1,106 @@
+$background-color: #ffffff;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  background-color: $background-color;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    .navBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 1rem 0;
+      span {
+        font-size: 2.5rem;
+        font-weight: 600;
+        display: block;
+        a {
+          text-decoration: none;
+          color: #000000ff;
+          vertical-align: top;
+        }
+      }
+      .scribble {
+        animation-name: cycle;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes cycle {
+        0% {
+          transform: rotateZ(0deg) scale(1);
+        }
+        50% {
+          transform: rotateZ(180deg) scale(1.2);
+        }
+        100% {
+          transform: rotateZ(360deg) scale(1);
+        }
+      }
+    }
+  }
+
+  main {
+    margin: 1rem 1rem;
+  }
+  footer {
+    .footerWrapper {
+      padding: 1rem 1rem;
+      max-width: 100%;
+      height: 20rem;
+      background-color: rgba(168, 33, 89, 0.664);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+      .contactInst {
+        display: block;
+        width: 100px;
+        height: 100px;
+        font-size: 4rem;
+        position: relative;
+      }
+      .contacts {
+        display: block;
+        font-size: 3rem;
+      }
+      .contactTG {
+        display: block;
+        font-size: 11rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    width: 600px;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+}

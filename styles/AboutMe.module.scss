@@ -1,0 +1,46 @@
+.aboutInvisible {
+  opacity: 0;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(50px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+  div {
+    // width: 10rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  span {
+    width: 50rem;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-right: 2rem;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .aboutInvisible {
+    margin: 2rem 1rem;
+    flex-direction: column;
+    div {
+      font-size: 3rem;
+      padding: 2rem 0;
+    }
+    span {
+      width: 100%;
+      display: block;
+      font-size: 3rem;
+      margin-right: 2rem;
+      font-weight: 600;
+      padding: 2rem 0;
+    }
+  }
+}
