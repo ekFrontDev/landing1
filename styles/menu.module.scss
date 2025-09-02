@@ -52,15 +52,18 @@
 }
 
 @media (max-width: 600px) {
-  .menu {
-    margin: 5rem 0;
-    font-size: 9rem;
-    // font-weight: 600;
-  }
+  body {
+    width: 600px;
+    .menu {
+      margin: 5rem 0;
+      font-size: 9rem;
+      // font-weight: 600;
+    }
 
-  .list {
-    li {
-      padding: 2rem 0;
+    .list {
+      li {
+        padding: 2rem 2rem;
+      }
     }
   }
 }
