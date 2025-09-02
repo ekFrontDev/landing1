@@ -17,7 +17,7 @@
     display: block;
     font-size: 2.5rem;
     font-weight: 300;
-    margin-right: 2rem;
+    margin-left: auto;
   }
 }
 
@@ -28,7 +28,7 @@
 
 @media (max-width: 600px) {
   .aboutInvisible {
-    margin: 2rem 1rem;
+    margin: 2rem 2rem;
     flex-direction: column;
     div {
       font-size: 3rem;

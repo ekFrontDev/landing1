@@ -1,6 +1,6 @@
 .link {
   text-decoration: none;
-  color: #000000ff;
+  color: #61686b;
   vertical-align: top;
 }
 
@@ -8,4 +8,10 @@
   display: block;
   font-size: 3rem;
   font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .invisibleMenu {
+    display: none;
+  }
 }

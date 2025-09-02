@@ -1,4 +1,7 @@
-$background-color: #ffffff;
+@import '@fontsource/jura/400.css';
+@import '@fontsource/jura/600.css';
+@import '@fontsource/jura/700.css';
+$background-color: #fff;
 
 * {
   box-sizing: border-box;
@@ -13,10 +16,11 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  color: #61686b;
 }
 
 body {
-  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-family: 'Jura', sans-serif;
   background-color: $background-color;
 
   header {
@@ -34,9 +38,15 @@ body {
         display: block;
         a {
           text-decoration: none;
-          color: #000000ff;
+          color: #61686b;
           vertical-align: top;
         }
+      }
+      .name {
+        display: none;
+      }
+      .iconMenu {
+        display: none;
       }
       .scribble {
         animation-name: cycle;
@@ -65,14 +75,15 @@ body {
     .footerWrapper {
       padding: 1rem 1rem;
       max-width: 100%;
-      height: 20rem;
-      background-color: rgba(168, 33, 89, 0.664);
+      height: auto;
+      background-color: #d4d4d4;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       div {
         display: flex;
         justify-content: space-between;
+        padding: 1rem 1rem 4rem 1rem;
       }
       .contactInst {
         display: block;
@@ -102,5 +113,40 @@ body {
     width: 600px;
     font-size: 12px;
     margin: 0 auto;
+    header {
+      .navBar {
+        justify-content: space-between;
+        .about {
+          a {
+            display: none;
+          }
+        }
+        .name {
+          display: inline;
+          padding-top: 0.5rem;
+          margin: 0 auto;
+          font-size: 3.5rem;
+          vertical-align: bottom;
+        }
+        .scribble {
+          margin: 0 auto 0 auto;
+        }
+        .iconMenu {
+          display: block;
+          margin: 0.5rem auto 0 auto;
+        }
+      }
+    }
+    footer {
+      .footerWrapper {
+        height: auto;
+        div {
+          padding: 0;
+        }
+        .contactTG {
+          height: 10rem;
+        }
+      }
+    }
   }
 }

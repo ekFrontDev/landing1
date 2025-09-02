@@ -1,13 +1,15 @@
-import '../styles/global.scss';
-import Image from 'next/image';
-import ArtName from '../components/ArtName';
-import AboutMe from '../components/AboutMe';
-import PreViewBlock from '../components/PreViewBlock';
-import TgName from '../components/TgName';
-import A from '../components/A';
-import ForStudents from '../components/ForStudents';
-import PlanAirBlock from '../components/PlanAirBlock';
-import SimpleSlider from '../components/Slider';
+import '../app/styles/global.scss';
+import Header from '../widgets/header/ui/Header';
+import Footer from '../widgets/footer/ui/Footer';
+import AboutMe from '../components/AboutMe/AboutMe';
+import ForStudents from '../components/ForStudents/ForStudents';
+import PlanAirBlock from '../components/PlanAirBlock/PlanAirBlock';
+import SwiperSlider from '../shared/ui/swiperSlider/SwiperSlider';
+import {
+  galleryImages,
+  studentImages,
+  planAirImages,
+} from '../shared/utils/galleryImages';
 
 const Index = () => {
   return (
@@ -22,40 +24,16 @@ const Index = () => {
       </Head> */}
 
       <body className="">
-        <header>
-          <div className="navBar">
-            <span>
-              <a href="#aboutMe">ОБО МНЕ</a>
-            </span>
-            <Image
-              className="scribble"
-              src="/scribble.svg"
-              width={60}
-              height={60}
-            />
-            <A href={'/menu'} text={'МЕНЮ'} />
-          </div>
-          <ArtName />
-        </header>
+        <Header />
         <main>
-          <SimpleSlider />
-          {/* <PreViewBlock text={'ПРЕВЬЮ РАБОТ'} /> */}
+          <SwiperSlider images={galleryImages} />
           <AboutMe />
-          <PreViewBlock text={'ПРЕВЬЮ РАБОТ СТУДЕНТОВ'} />
+          <SwiperSlider images={studentImages} />
           <ForStudents />
-          <PreViewBlock text={'ПРЕВЬЮ ПОЕЗДОК НА ПЛЕНЕР'} />
+          <SwiperSlider images={planAirImages} />
           <PlanAirBlock />
         </main>
-        <footer>
-          <div className="footerWrapper">
-            <div>
-              <A href={'*'} text={'INSTAGRAM'} />
-              <A href={'https://t.me/chevengur_tania'} text={'TELEGRAM'} />
-              <A href={'mailto:tabachok.t.v@mail.ru'} text={'EMAIL'} />
-            </div>
-            <TgName />
-          </div>
-        </footer>
+        <Footer />
       </body>
     </>
   );

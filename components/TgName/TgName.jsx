@@ -4,16 +4,16 @@ export default function TgName() {
       <svg
         width="100%"
         height="100%"
-        viewBox="0 0 300 25"
+        viewBox="0 0 300 30"
         xmlns="http://www.w3.org/2000/svg"
       >
         <text
           x="50%"
           y="50%"
-          fontFamily="Arial, sans-serif"
-          fontSize="31"
+          fontFamily="Jura, sans-serif"
+          fontSize="32"
           fontWeight="bold"
-          fill="#000000ff"
+          fill="#61686b"
           textAnchor="middle"
           dominantBaseline="middle"
         >
