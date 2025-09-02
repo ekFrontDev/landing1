@@ -19,7 +19,7 @@ export default function Header() {
         />
         <span className="name">ТАТЬЯНА ТАБАЧОК</span>
         <A href={'/menu'} text={'МЕНЮ'} styleVisible="invisibleMenu" />
-        <Link className="iconMenu" href={'/'}>
+        <Link className="iconMenu" href={'/menu'}>
           <Image className="" src="/menu.svg" width={50} height={50} alt="" />
         </Link>
       </div>

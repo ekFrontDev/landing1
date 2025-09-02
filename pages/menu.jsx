@@ -7,7 +7,7 @@ const Menu = () => {
       <div>
         <button className={styles.btnBack}>
           <a href={'/'}>
-            <Image src="/cross1.svg" width={110} height={110} />
+            <Image src="/cross1.svg" width={90} height={90} />
           </a>
         </button>
       </div>
@@ -16,6 +16,7 @@ const Menu = () => {
           <li>ЖИВОПИСЬ</li>
           <li>ГРАФИКА</li>
           <li>НАБРОСКИ</li>
+          <li>ШОП</li>
         </ul>
       </div>
     </div>
