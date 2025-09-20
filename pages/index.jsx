@@ -3,6 +3,7 @@ import Header from '../widgets/header/ui/Header';
 import Footer from '../widgets/footer/ui/Footer';
 import GreetingBlock from '../components/GreetingBlock/GreetingBlock';
 import Technique from '../components/Technique/Technique';
+import ArtPreview from '../components/ArtPreview/ArtPreview';
 import AboutMe from '../components/AboutMe/AboutMe';
 import ForStudents from '../components/ForStudents/ForStudents';
 import PlanAirBlock from '../components/PlanAirBlock/PlanAirBlock';
@@ -36,14 +37,15 @@ const Index = () => {
             height={550}
             alt=""
           />
-          {/* <SwiperSlider images={galleryImages} /> */}
           <GreetingBlock />
           <Technique />
-          <AboutMe />
-          <SwiperSlider images={studentImages} />
-          <ForStudents />
-          <SwiperSlider images={planAirImages} />
-          <PlanAirBlock />
+          <ArtPreview />
+          {/* <SwiperSlider images={galleryImages} /> */}
+          {/* <AboutMe /> */}
+          {/* <SwiperSlider images={studentImages} /> */}
+          {/* <ForStudents /> */}
+          {/* <SwiperSlider images={planAirImages} /> */}
+          {/* <PlanAirBlock /> */}
         </main>
         <Footer />
       </body>

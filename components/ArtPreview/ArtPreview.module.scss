@@ -1,0 +1,29 @@
+.ArtPreviewTtile {
+  display: block;
+  font-size: 4rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.artPreview {
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .artPreviewImg {
+    margin-bottom: 5rem;
+  }
+}
+
+.linkGallery {
+  height: 10rem;
+  color: #61686b90;
+  border: 0.2rem solid #61686b90;
+  text-decoration: none;
+  margin: 0 8rem 2rem 8rem;
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 1rem;
+}

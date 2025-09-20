@@ -1,5 +1,5 @@
 .techniqueWrapper {
-  margin: 0 2rem;
+  margin: 0 2rem 6rem 2rem;
   font-size: 2.5rem;
   .techniqueTitle {
     text-align: center;
@@ -12,14 +12,14 @@
     span {
       display: inline-block;
       border-radius: 1.5rem;
-      border: 0.2rem solid #61686bbf;
+      color: white;
       padding: 1rem 2rem;
       margin: 0.5rem;
       font-weight: 700;
+      background-color: #61686b90;
     }
     span:hover {
       background-color: #61686bbf;
-      color: white;
     }
   }
 }

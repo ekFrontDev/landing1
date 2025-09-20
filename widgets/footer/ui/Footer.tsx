@@ -10,18 +10,18 @@ export default function Footer() {
             href={
               'https://www.instagram.com/chevengur_tania?igsh=ZGhvYm0wOGJ6MWps'
             }
-            text={'INSTAGRAM'}
             styleVisible=""
+            logoName="instLogo.svg"
           />
           <A
             href={'https://t.me/chevengur_tania'}
-            text={'TELEGRAM'}
             styleVisible=""
+            logoName="tgLogo.svg"
           />
           <A
-            href={'mailto:tabachok.t.v@mail.ru'}
-            text={'EMAIL'}
+            href={'https://vk.com/tatutiana'}
             styleVisible=""
+            logoName="vkLogo.svg"
           />
         </div>
         <TgName />

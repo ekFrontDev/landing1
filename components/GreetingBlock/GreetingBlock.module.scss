@@ -11,9 +11,23 @@
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.5rem;
-    color: #61686bbf;
+    color: #61686bb6;
+    text-align: justify;
     .boldText {
       color: #61686b;
     }
   }
+}
+
+.aboutInvisible {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

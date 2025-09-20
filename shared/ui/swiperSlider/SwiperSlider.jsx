@@ -11,6 +11,7 @@ import styles from './SwiperSlider.module.scss';
 function SwiperSlider({ images }) {
   return (
     <section className={styles.artSlider}>
+      <h2>Мои работы</h2>
       <Swiper
         modules={[Navigation, Pagination, Keyboard]}
         spaceBetween={0}
