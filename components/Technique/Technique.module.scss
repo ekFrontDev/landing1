@@ -1,0 +1,25 @@
+.techniqueWrapper {
+  margin: 0 2rem;
+  font-size: 2.5rem;
+  .techniqueTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .technique1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    span {
+      display: inline-block;
+      border-radius: 1.5rem;
+      border: 0.2rem solid #61686bbf;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      font-weight: 700;
+    }
+    span:hover {
+      background-color: #61686bbf;
+      color: white;
+    }
+  }
+}

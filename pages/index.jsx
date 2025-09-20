@@ -1,6 +1,8 @@
 import '../app/styles/global.scss';
 import Header from '../widgets/header/ui/Header';
 import Footer from '../widgets/footer/ui/Footer';
+import GreetingBlock from '../components/GreetingBlock/GreetingBlock';
+import Technique from '../components/Technique/Technique';
 import AboutMe from '../components/AboutMe/AboutMe';
 import ForStudents from '../components/ForStudents/ForStudents';
 import PlanAirBlock from '../components/PlanAirBlock/PlanAirBlock';
@@ -10,6 +12,7 @@ import {
   studentImages,
   planAirImages,
 } from '../shared/utils/galleryImages';
+import Image from 'next/image';
 
 const Index = () => {
   return (
@@ -26,7 +29,16 @@ const Index = () => {
       <body className="">
         <Header />
         <main>
-          <SwiperSlider images={galleryImages} />
+          <Image
+            className="portfolioArt"
+            src="/portfolioArt/portfolioArt.jpg"
+            width={550}
+            height={550}
+            alt=""
+          />
+          {/* <SwiperSlider images={galleryImages} /> */}
+          <GreetingBlock />
+          <Technique />
           <AboutMe />
           <SwiperSlider images={studentImages} />
           <ForStudents />

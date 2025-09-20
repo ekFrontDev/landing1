@@ -1,0 +1,19 @@
+.greetingBlockSection {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 6rem 2rem;
+  .greetingBlock {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+  }
+  .greetingBlockContinue {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: #61686bbf;
+    .boldText {
+      color: #61686b;
+    }
+  }
+}

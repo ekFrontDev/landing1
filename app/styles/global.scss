@@ -116,6 +116,7 @@ body {
     header {
       .navBar {
         justify-content: space-between;
+        margin: 0 1rem;
         .about {
           a {
             display: none;
@@ -123,18 +124,25 @@ body {
         }
         .name {
           display: inline;
-          padding-top: 0.5rem;
-          margin: 0 auto;
-          font-size: 3.5rem;
+          padding: 0.5rem 0 0 2rem;
+          margin: 0 auto 0 0;
+          font-size: 3rem;
           vertical-align: bottom;
         }
         .scribble {
-          margin: 0 auto 0 auto;
+          margin: 0.5rem 0 0 0;
         }
         .iconMenu {
           display: block;
-          margin: 0.5rem auto 0 auto;
+          margin: 0.5rem 0 0 auto;
         }
+      }
+    }
+    main {
+      .portfolioArt {
+        display: block;
+        margin: 3rem auto;
+        border-radius: 1rem;
       }
     }
     footer {
