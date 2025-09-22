@@ -30,13 +30,18 @@ const Index = () => {
       <body className="">
         <Header img="/menu.svg" hrefBtn="/menu" />
         <main>
-          <Image
-            className="portfolioArt"
-            src="/portfolioArt/portfolioArt.jpg"
-            width={550}
-            height={550}
-            alt=""
-          />
+          <div className="imageContainer">
+            <Image
+              className="portfolioArt"
+              src="/portfolioArt/portfolioArt.jpg"
+              fill
+              sizes="(max-width: 768px) calc(100vw - 20px), 10vw"
+              // width={300}
+              // height={300}
+              style={{ objectFit: 'cover' }}
+              alt=""
+            />
+          </div>
           <GreetingBlock />
           <Technique />
           <ArtPreview />

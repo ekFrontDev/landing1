@@ -11,6 +11,15 @@ const Menu = () => {
           ГАЛЕРЕЯ
         </Link>
         <Link className={styles.menuLink} href="">
+          ЖИВОПИСЬ
+        </Link>
+        <Link className={styles.menuLink} href="">
+          ГРАФИКА
+        </Link>
+        <Link className={styles.menuLink} href="">
+          СМЕШАННАЯ ТЕХНИКА
+        </Link>
+        <Link className={styles.menuLink} href="">
           УЧЕНИКАМ
         </Link>
         <Link className={styles.menuLink} href="">
@@ -21,23 +30,6 @@ const Menu = () => {
         </Link>
       </div>
     </body>
-    // <div className={styles.menu}>
-    //   <div>
-    //     <button className={styles.btnBack}>
-    //       <a href={'/'}>
-    //         <Image src="/cross1.svg" width={90} height={90} />
-    //       </a>
-    //     </button>
-    //   </div>
-    //   <div>
-    //     <ul className={styles.list}>
-    //       <li>ЖИВОПИСЬ</li>
-    //       <li>ГРАФИКА</li>
-    //       <li>НАБРОСКИ</li>
-    //       <li>ШОП</li>
-    //     </ul>
-    //   </div>
-    // </div>
   );
 };
 

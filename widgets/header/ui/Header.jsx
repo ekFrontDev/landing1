@@ -12,14 +12,14 @@ export default function Header({ img, hrefBtn }) {
         <Image
           className="scribble"
           src="/scribble.svg"
-          width={45}
-          height={45}
+          width={25}
+          height={25}
           alt=""
         />
         <span className="name">ТАТЬЯНА ТАБАЧОК</span>
         {/* <A href={'/menu'} text={'МЕНЮ'} styleVisible="invisibleMenu" /> */}
         <Link className="iconMenu" href={hrefBtn}>
-          <Image className="" src={img} width={45} height={45} alt="" />
+          <Image className="" src={img} width={25} height={25} alt="" />
         </Link>
       </div>
       <ArtName />

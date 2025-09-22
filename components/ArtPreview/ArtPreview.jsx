@@ -15,29 +15,29 @@ export default function ArtPreview() {
         <Image
           className={styles.artPreviewImg}
           src="/arts/7.jpg"
-          width={236}
-          height={366}
+          width={120}
+          height={200}
           alt=""
         />
         <Image
           className={styles.artPreviewImg}
           src="/arts/5.jpg"
-          width={236}
-          height={366}
+          width={120}
+          height={200}
           alt=""
         />
         <Image
           className={styles.artPreviewImg}
           src="/arts/10.jpg"
-          width={236}
-          height={366}
+          width={120}
+          height={200}
           alt=""
         />
         <Image
           className={styles.artPreviewImg}
           src="/arts/13.jpg"
-          width={236}
-          height={366}
+          width={120}
+          height={200}
           alt=""
         />
       </div>
@@ -48,8 +48,8 @@ export default function ArtPreview() {
         <Image
           className={styles.arrow}
           src="/arrowRight.svg"
-          width={35}
-          height={35}
+          width={25}
+          height={25}
           alt="arrow"
         />
       </div>

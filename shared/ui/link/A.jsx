@@ -9,8 +9,8 @@ export default function A({ href, styleVisible, logoName }) {
       <Image
         className={styles.logo}
         src={`/socialMedia/${logoName}`}
-        width={70}
-        height={70}
+        width={40}
+        height={40}
         alt=""
       />
     </Link>
