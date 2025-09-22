@@ -13,7 +13,7 @@ export default function TgName() {
           fontFamily="Jura, sans-serif"
           fontSize="32"
           fontWeight="bold"
-          fill="#61686b90"
+          fill="#61686b"
           textAnchor="middle"
           dominantBaseline="middle"
         >

@@ -28,7 +28,7 @@ const Index = () => {
       </Head> */}
 
       <body className="">
-        <Header />
+        <Header img="/menu.svg" hrefBtn="/menu" />
         <main>
           <Image
             className="portfolioArt"

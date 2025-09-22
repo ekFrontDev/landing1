@@ -1,10 +1,15 @@
 import styles from './ArtPreview.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 export default function ArtPreview() {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
   return (
-    <>
+    <section
+      ref={ref}
+      className={`${styles.aboutInvisible} ${isVisible ? styles.visible : ''}`}
+    >
       <h2 className={styles.ArtPreviewTtile}>МОИ РАБОТЫ</h2>
       <div className={styles.artPreview}>
         <Image
@@ -48,6 +53,6 @@ export default function ArtPreview() {
           alt="arrow"
         />
       </div>
-    </>
+    </section>
   );
 }
