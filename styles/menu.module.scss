@@ -1,66 +1,13 @@
-.menu {
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: 'Jura', sans-serif;
-  animation: beginani 15s infinite;
-  text-align: center;
+.menuWrapper {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0px 0px;
-  font-size: 10rem;
+  font-size: 4rem;
   font-weight: 700;
-}
-@keyframes beginani {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.btnBack {
-  background: none;
-  border: none;
-  transition: transform 0.5s ease;
-}
-
-.btnBack:hover {
-  transform: rotateZ(90deg);
-}
-
-.list {
-  list-style-type: none;
-  li {
-    transition:
-      text-shadow 0.5s ease,
-      transform 0.5s ease,
-      scale 0.3s;
-    cursor: pointer;
-  }
-  li:hover {
-    text-shadow: -6px 6px 2px rgb(80, 79, 79);
-    transform: translateY(-5px) scale(1.01);
-  }
-}
-
-@media (max-width: 600px) {
-  .menu {
-    margin: 5rem 0;
-    font-size: 9rem;
-    // font-weight: 600;
-  }
-
-  .list {
-    li {
-      padding: 2rem 2rem;
-    }
+  margin: 2rem;
+  .menuLink {
+    display: block;
+    text-decoration: none;
+    margin: 2rem auto;
+    color: #61686b;
   }
 }
