@@ -18,7 +18,7 @@ export default function Header() {
           alt=""
         />
         <span className="name">ТАТЬЯНА ТАБАЧОК</span>
-        <A href={'/menu'} text={'МЕНЮ'} styleVisible="invisibleMenu" />
+        {/* <A href={'/menu'} text={'МЕНЮ'} styleVisible="invisibleMenu" /> */}
         <Link className="iconMenu" href={'/menu'}>
           <Image className="" src="/menu.svg" width={45} height={45} alt="" />
         </Link>

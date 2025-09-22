@@ -73,14 +73,15 @@ body {
   }
   footer {
     .footerWrapper {
-      margin: 10rem 2rem 0 2rem;
-      padding: 1rem 1rem;
+      margin: 5rem 2rem 0 2rem;
+      padding: 2rem 1rem;
       max-width: 100%;
       height: auto;
       // background-color: #d4d4d4;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      border-top: 0.3rem solid #61686b90;
       div {
         display: flex;
         justify-content: space-between;
