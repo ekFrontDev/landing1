@@ -1,5 +1,4 @@
 import styles from '../styles/menu.module.scss';
-import Image from 'next/image';
 import Link from 'next/link';
 import Header from '../widgets/header/ui/Header';
 
