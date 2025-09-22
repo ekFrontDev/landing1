@@ -1,7 +1,7 @@
 @import '@fontsource/jura/400.css';
 @import '@fontsource/jura/600.css';
 @import '@fontsource/jura/700.css';
-$background-color: #fff;
+$background-color: #e9e5db;
 
 * {
   box-sizing: border-box;
@@ -77,7 +77,6 @@ body {
       padding: 2rem 1rem;
       max-width: 100%;
       height: auto;
-      // background-color: #d4d4d4;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
