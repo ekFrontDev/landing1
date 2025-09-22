@@ -36,9 +36,18 @@ export default function ArtPreview() {
           alt=""
         />
       </div>
-      <Link className={styles.linkGallery} href="/">
-        СМОТРЕТЬ В ГАЛЕРЕИ
-      </Link>
+      <div className={styles.linkWrapper}>
+        <Link className={styles.linkGallery} href="/">
+          СМОТРЕТЬ В ГАЛЕРЕИ
+        </Link>
+        <Image
+          className={styles.arrow}
+          src="/arrowRight.svg"
+          width={35}
+          height={35}
+          alt="arrow"
+        />
+      </div>
     </>
   );
 }
