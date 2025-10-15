@@ -6,7 +6,6 @@ import ArtName from '../../../components/ArtName/ArtName';
 
 export default function Header() {
   const path = usePathname();
-  console.log(path);
   const isScribble = path === '/' ? '/assets/icons/menu.svg' : '/assets/icons/cross.svg';
   const isOpen = path === '/' ? '/menu' : '/';
   return (
