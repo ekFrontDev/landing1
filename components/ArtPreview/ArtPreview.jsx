@@ -36,7 +36,7 @@ export default function ArtPreview() {
         />
         <Image
           className={styles.artPreviewImg}
-          src="/arts/13.jpg"
+          src="/assets/arts/13.jpg"
           width={120}
           height={200}
           alt=""
