@@ -2,7 +2,6 @@ import styles from './page.module.scss';
 import { galleryImages } from '../../shared/utils/galleryImages';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Button } from '@/shared/ui/button';
 
 const Gallery = () => {
   return (

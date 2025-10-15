@@ -33,7 +33,7 @@
     "**/*.tsx",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-, "widgets/header/ui/Header.jsx", "widgets/footer/ui/Footer.jsx"  ],
+, "widgets/header/ui/Header.tsx", "widgets/footer/ui/Footer.jsx"  ],
   "exclude": [
     "node_modules"
   ]

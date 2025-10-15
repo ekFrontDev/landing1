@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ArtName from '../../../components/ArtName/ArtName';
 
-export default function Header({ img, hrefBtn }) {
+export default function Header() {
   const path = usePathname();
   console.log(path);
   const isScribble = path === '/' ? '/assets/icons/menu.svg' : '/assets/icons/cross.svg';

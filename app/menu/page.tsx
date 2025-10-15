@@ -1,7 +1,5 @@
-import Header from '@/widgets/header/ui/Header';
 import styles from './page.module.scss';
 import Link from 'next/link';
-// import Header from '../widgets/header/ui/Header';
 
 const Menu = () => {
   return (
