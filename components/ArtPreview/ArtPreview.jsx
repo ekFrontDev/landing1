@@ -1,3 +1,4 @@
+"use client"
 import styles from './ArtPreview.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,21 +15,21 @@ export default function ArtPreview() {
       <div className={styles.artPreview}>
         <Image
           className={styles.artPreviewImg}
-          src="/arts/7.jpg"
+          src="/assets/arts/7.jpg"
           width={120}
           height={200}
           alt=""
         />
         <Image
           className={styles.artPreviewImg}
-          src="/arts/5.jpg"
+          src="/assets/arts/5.jpg"
           width={120}
           height={200}
           alt=""
         />
         <Image
           className={styles.artPreviewImg}
-          src="/arts/10.jpg"
+          src="/assets/arts/10.jpg"
           width={120}
           height={200}
           alt=""
@@ -42,12 +43,12 @@ export default function ArtPreview() {
         />
       </div>
       <div className={styles.linkWrapper}>
-        <Link className={styles.linkGallery} href="/">
-          СМОТРЕТЬ В ГАЛЕРЕИ
+        <Link className={styles.linkGallery} href="/gallery">
+          СМОТРЕТЬ В ГАЛЕРЕЕ
         </Link>
         <Image
           className={styles.arrow}
-          src="/arrowRight.svg"
+          src="/assets/icons/arrowRight.svg"
           width={25}
           height={25}
           alt="arrow"

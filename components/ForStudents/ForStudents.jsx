@@ -1,4 +1,4 @@
-import styles from '../AboutMe/AboutMe.module.scss';
+import styles from '../AboutMe/ui/AboutMe.module.scss';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 export default function ForStudents() {

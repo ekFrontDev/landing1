@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   sassOptions: {
     includePaths: ['./styles'],
   },
+  experimental: {
+    cssChunking: true, // default
+  },
 };
 
 export default nextConfig;

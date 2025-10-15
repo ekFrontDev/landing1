@@ -1,13 +1,9 @@
+@use './variables/variablesGlobal.scss';
 @import '@fontsource/jura/400.css';
 @import '@fontsource/jura/600.css';
 @import '@fontsource/jura/700.css';
-$background-color: #e9e5db;
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+$background-color: #e9e5db;
 
 html,
 body {
@@ -20,7 +16,7 @@ body {
 }
 
 body {
-  font-family: 'Jura', sans-serif;
+  font-family: var(--font-family-main);
   background-color: $background-color;
 
   header {

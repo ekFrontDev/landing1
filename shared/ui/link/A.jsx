@@ -8,7 +8,7 @@ export default function A({ href, styleVisible, logoName }) {
       {/* <span className={styles.contacts}>{text}</span> */}
       <Image
         className={styles.logo}
-        src={`/socialMedia/${logoName}`}
+        src={`/assets/socialMedia/${logoName}`}
         width={40}
         height={40}
         alt=""

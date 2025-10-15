@@ -1,3 +1,4 @@
+"use client"
 import styles from './GreetingBlock.module.scss';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 

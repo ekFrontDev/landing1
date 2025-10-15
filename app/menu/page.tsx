@@ -1,13 +1,13 @@
-import styles from '../styles/menu.module.scss';
+import Header from '@/widgets/header/ui/Header';
+import styles from './page.module.scss';
 import Link from 'next/link';
-import Header from '../widgets/header/ui/Header';
+// import Header from '../widgets/header/ui/Header';
 
 const Menu = () => {
   return (
-    <body>
-      <Header img="/cross.svg" hrefBtn="/" />
+    <div>
       <div className={styles.menuWrapper}>
-        <Link className={styles.menuLink} href="">
+        <Link className={styles.menuLink} href="/gallery">
           ГАЛЕРЕЯ
         </Link>
         <Link className={styles.menuLink} href="">
@@ -29,7 +29,7 @@ const Menu = () => {
           ШОП
         </Link>
       </div>
-    </body>
+    </div>
   );
 };
 

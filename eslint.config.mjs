@@ -20,7 +20,7 @@ const eslintConfig = [
     rules: {
       'prettier/prettier': 'error',
       'react/prop-types': 'off', // Отключаем prop-types, если используем TypeScript
-      'no-unused-vars': ['error', { varsIgnorePattern: '^_' }],
+      'no-unused-vars': 'off',
     },
   },
   prettierConfig,
