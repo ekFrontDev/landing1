@@ -1,24 +1,22 @@
-@use './variables/variablesGlobal.scss';
+@use './variables/global.scss';
+@use './themes/dark.scss';
+@use './themes/normal.scss';
 @import '@fontsource/jura/400.css';
 @import '@fontsource/jura/600.css';
 @import '@fontsource/jura/700.css';
 
-$background-color: #e9e5db;
-
 html,
 body {
   width: 100%;
-  font-size: 16px;
+  height: 100%;
+  font-family: var(--font-family-main);
+  font-size: var(--font-size-m);
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  color: #61686b;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
 }
 
 body {
-  font-family: var(--font-family-main);
-  background-color: $background-color;
-
   header {
     display: flex;
     flex-direction: column;
@@ -34,7 +32,6 @@ body {
         display: block;
         a {
           text-decoration: none;
-          color: #61686b;
           vertical-align: top;
         }
       }
