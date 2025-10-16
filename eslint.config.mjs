@@ -18,6 +18,9 @@ const eslintConfig = [
       prettier: prettierPlugin,
     },
     rules: {
+      indent: [2, 4, { ignoredNodes: ['ConditionalExpression'] }],
+      quotes: ['error', 'single'],
+      semi: ['error', 'always'],
       'prettier/prettier': 'error',
       'react/prop-types': 'off', // Отключаем prop-types, если используем TypeScript
       'no-unused-vars': 'off',

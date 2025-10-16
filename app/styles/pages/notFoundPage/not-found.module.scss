@@ -1,0 +1,30 @@
+.NotFoundPage {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px; 
+}
+
+.errorCode {
+    font-size: 25rem;
+}
+
+.errorMessage {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.link {
+    font-weight: 700; 
+    text-decoration: none;
+    color: #61686b;
+    border: 2px solid #61686b;
+    border-radius: 10px;
+    background-color: #c4cccf;
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
