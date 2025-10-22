@@ -2,7 +2,7 @@
 import styles from './ArtPreview.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import useIntersectionObserver from '../../shared/hooks/useIntersectionObserver';
 
 export default function ArtPreview() {
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });

@@ -1,6 +1,6 @@
 'use client';
 import styles from './AboutMe.module.scss';
-import useIntersectionObserver from '../../../hooks/useIntersectionObserver';
+import useIntersectionObserver from '../../../shared/hooks/useIntersectionObserver';
 
 export default function AboutMe() {
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
