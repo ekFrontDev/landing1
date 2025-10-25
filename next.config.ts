@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   sassOptions: {
-    includePaths: ['./styles'],
+    includePaths: ['./app/styles'],
   },
   experimental: {
     cssChunking: true, // default

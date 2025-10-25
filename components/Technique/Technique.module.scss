@@ -1,8 +1,8 @@
 .techniqueWrapper {
   margin: 0 2rem 6rem 2rem;
   padding-top: 2rem;
-  font-size: 2.5rem;
-  border-top: 0.3rem solid #61686b90;
+  font-size: var(--font-size-m);
+  border-top: var(--border-top);
   .techniqueTitle {
     text-align: center;
     margin-bottom: 2rem;
@@ -14,14 +14,14 @@
     span {
       display: inline-block;
       border-radius: 1.5rem;
-      color: white;
+      color: var(--inverted-primary-color);
       padding: 1rem 2rem;
       margin: 0.5rem;
       font-weight: 700;
-      background-color: #61686b90;
+      background-color: var(--inverted-bg-color);
     }
     span:hover {
-      background-color: #61686bbf;
+      background-color: var(--inverted-hover-bg-color);
     }
   }
 }

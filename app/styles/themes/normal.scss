@@ -1,7 +1,9 @@
-.app,
-.light {
+.light,
+:root {
     --bg-color: #e9e5db;
     --inverted-bg-color: #61686b;
+    --inverted-hover-bg-color: #61686bbf;
     --primary-color: #61686b;
+    --bold-color: #444748;
     --inverted-primary-color: #e9e5db;
 }

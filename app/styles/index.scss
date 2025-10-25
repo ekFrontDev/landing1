@@ -1,9 +1,9 @@
-@use './variables/global.scss';
-@use './themes/dark.scss';
-@use './themes/normal.scss';
-@import '@fontsource/jura/400.css';
-@import '@fontsource/jura/600.css';
-@import '@fontsource/jura/700.css';
+@use '../styles/variables/global.scss';
+// @use './themes/dark.scss';
+// @use './themes/normal.scss';
+// @import '@fontsource/jura/400.css';
+// @import '@fontsource/jura/600.css';
+// @import '@fontsource/jura/700.css';
 
 html,
 body {
@@ -27,7 +27,6 @@ body {
       justify-content: space-between;
       margin: 1rem 0;
       span {
-        font-size: 2.5rem;
         font-weight: 600;
         display: block;
         a {
