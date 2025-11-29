@@ -1,0 +1,22 @@
+.menuWrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  width: 100%;
+  font-size: var(--font-size-l);
+  font-weight: 700;
+}
+
+.menuLink {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-right: 3px solid var(--primary-color);
+    margin-right: 20px;
+    padding-right: 20px;
+    transition: transform 0.2s;
+}
+
+.menuLink:hover {
+    transform: translateY(-4px);
+}

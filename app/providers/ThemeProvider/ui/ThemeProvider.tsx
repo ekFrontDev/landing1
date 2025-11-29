@@ -6,10 +6,8 @@ interface ThemeProviderProps {
   children: ReactNode;
 }
 
-const defaultTheme = (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
-
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
+  const [theme, setTheme] = useState<Theme>(Theme.LIGHT);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -17,15 +15,8 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     const savedTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme;
     if (savedTheme) {
       setTheme(savedTheme);
-      document.documentElement.className = savedTheme;
     }
   }, []);
-
-  useEffect(() => {
-    if (mounted) {
-      document.documentElement.className = theme;
-    }
-  }, [theme, mounted]);
 
   const value = useMemo(
     () => ({
@@ -36,7 +27,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   );
 
   if (!mounted) {
-    return <>{children}</>;
+    return null;
   }
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;

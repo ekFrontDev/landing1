@@ -1,111 +1,78 @@
-@use '../styles/variables/global.scss';
-// @use './themes/dark.scss';
-// @use './themes/normal.scss';
-// @import '@fontsource/jura/400.css';
-// @import '@fontsource/jura/600.css';
-// @import '@fontsource/jura/700.css';
+@use '../styles/variables/variables.scss' as *;
+@use '../styles/themes/normal.scss' as *;
+@use '../styles/themes/dark.scss' as *;
+@use '../styles/reset.scss' as *;
 
 html,
 body {
   width: 100%;
   height: 100%;
   font-family: var(--font-family-main);
-  font-size: var(--font-size-m);
   scroll-behavior: smooth;
   color: var(--primary-color);
   background-color: var(--bg-color);
 }
 
-body {
-  header {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 1rem;
-    .navBar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin: 1rem 0;
-      span {
-        font-weight: 600;
-        display: block;
-        a {
-          text-decoration: none;
-          vertical-align: top;
-        }
-      }
-      .name {
-        display: none;
-      }
-      .iconMenu {
-        display: none;
-      }
-      .scribble {
-        animation-name: cycle;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-      }
-      @keyframes cycle {
-        0% {
-          transform: rotateZ(0deg) scale(1);
-        }
-        50% {
-          transform: rotateZ(180deg) scale(1.2);
-        }
-        100% {
-          transform: rotateZ(360deg) scale(1);
-        }
-      }
-    }
-  }
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
+}
 
-  main {
-    margin: 1rem 1rem;
-    .imageContainer {
-      position: relative;
-      width: calc(100vw - 6rem);
-      height: calc(100vw - 6rem);
-      margin: 3rem auto;
-      padding: 0 2rem;
-    }
+main {
+  flex: wrap;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.name {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+  display: block;
+}
+
+.iconMenu {
+  display: none;
+}
+
+.scribble {
+  display: none;
+  animation-name: cycle;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cycle {
+  0% {
+    transform: rotateZ(0deg) scale(1);
   }
-  footer {
-    .footerWrapper {
-      margin: 5rem 2rem 0 2rem;
-      padding: 2rem 1rem;
-      max-width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      border-top: 0.3rem solid #61686b90;
-      div {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 1rem 4rem 1rem;
-      }
-      .contactInst {
-        display: block;
-        width: 100px;
-        height: 100px;
-        font-size: 4rem;
-        position: relative;
-      }
-      .contacts {
-        display: block;
-        font-size: 3rem;
-      }
-      .contactTG {
-        display: block;
-        font-size: 11rem;
-        font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
-      }
-    }
+  50% {
+    transform: rotateZ(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotateZ(360deg) scale(1);
   }
 }
+
+main {
+  margin: 1rem 1rem;
+}
+
+.imageContainer {
+    position: relative;
+    width: calc(100vw - 85rem);
+    height: calc(100vw - 85rem);
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+
 
 @media (max-width: 600px) {
   html,
@@ -115,49 +82,40 @@ body {
     font-size: 7px;
     margin: 0 auto;
   }
-  body {
-    header {
-      .navBar {
-        justify-content: space-between;
-        margin: 0 2rem;
-        .about {
-          a {
-            display: none;
-          }
-        }
-        .name {
-          display: inline;
-          padding: 0.5rem 0 0 2rem;
-          margin: 0 auto 0 0;
-          font-size: 3rem;
-          vertical-align: bottom;
-        }
-        .scribble {
-          margin: 0.5rem 0 0 0;
-        }
-        .iconMenu {
-          display: block;
-          margin: 0.5rem 0 0 auto;
-        }
-      }
-    }
-    main {
-      .portfolioArt {
-        display: block;
-        margin: 0 auto;
-        border-radius: 1rem;
-      }
-    }
-    footer {
-      .footerWrapper {
-        height: auto;
-        div {
-          padding: 0;
-        }
-        .contactTG {
-          height: 10rem;
-        }
-      }
-    }
+  
+  .navBar {
+    justify-content: space-between;
+    margin: 0 2rem;
   }
+    
+  .name {
+    display: inline;
+    padding: 0.5rem 0 0 2rem;
+    margin: 0 auto 0 0;
+    font-size: 3rem;
+    vertical-align: bottom;
+  }
+  .scribble {
+    display: block;
+    margin: 0.5rem 0 0 0;
+  }
+  .iconMenu {
+    display: block;
+    margin: 0.5rem 0 0 auto;
+  }
+  
+  .portfolioArt {
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
+  }
+
+  .imageContainer {
+    position: relative;
+    width: calc(100vw - 6rem);
+    height: calc(100vw - 6rem);
+    margin: 3rem auto;
+    padding: 0 2rem;
+    display: block;
+}
 }

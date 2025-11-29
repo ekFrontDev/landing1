@@ -1,0 +1,16 @@
+.menuWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: var(--font-size-l);
+  font-weight: 700;
+}
+
+.menuLink {
+    display: block;
+    margin: 2rem auto;
+    text-decoration: none;
+    color: var(--primary-color);
+}
