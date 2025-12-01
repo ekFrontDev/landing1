@@ -3,30 +3,59 @@
   flex-direction: column;
   margin: 0 2rem 6rem 2rem;
   font-size: var(--font-size-l);
-  .greetingBlock {
-    margin-bottom: 2rem;
-    line-height: 4rem;
-  }
-  .greetingBlockContinue {
-    font-size: var(--font-size-m);
-    font-weight: 700;
-    line-height: 2.5rem;
-    text-align: justify;
-    .boldText {
-      color: var(--bold-color);
-    }
-  }
+}
+
+.greetingBlock {
+  margin-bottom: 2rem;
+  line-height: 4rem;
+}
+
+.greetingBlockContinue {
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+.boldText {
+  color: var(--bold-color);
 }
 
 .aboutInvisible {
   opacity: 0;
   transform: translateY(50px);
   transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
+  opacity 0.7s ease,
+  transform 0.7s ease;
 }
 
 .visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media screen {
+  .greetingBlockSection {
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: var(--font-size-xl);
+    margin: 32px;
+  }
+
+  .greetingBlock {
+    margin-bottom: 24px;
+    line-height: 0; 
+  }
+
+  .greetingBlockContinue {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: justify;
+    color: var(--bold-color);
+  }
+
+  .boldText {
+    color: var(--bold-color);
+  }
 }

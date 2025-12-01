@@ -19,10 +19,6 @@ header {
   margin: 1rem 1rem;
 }
 
-main {
-  flex: wrap;
-}
-
 .navBar {
   display: flex;
   flex-direction: row;
@@ -32,7 +28,7 @@ main {
 
 .name {
   font-size: var(--font-size-l);
-  font-weight: 600;
+  font-weight: 700;
   display: block;
 }
 
@@ -64,12 +60,15 @@ main {
   margin: 1rem 1rem;
 }
 
+.imageFlex {
+  display: flex;
+  margin: 0 24px 0 24px;
+}
+
 .imageContainer {
     position: relative;
     width: calc(100vw - 85rem);
     height: calc(100vw - 85rem);
-    margin: 3rem auto;
-    padding: 0 2rem;
 }
 
 
@@ -92,7 +91,7 @@ main {
     display: inline;
     padding: 0.5rem 0 0 2rem;
     margin: 0 auto 0 0;
-    font-size: 3rem;
+    font-size: var(--font-size-l);
     vertical-align: bottom;
   }
   .scribble {
@@ -118,4 +117,8 @@ main {
     padding: 0 2rem;
     display: block;
 }
+  .imageFlex {
+    display: flex;
+    flex-direction: column;
+  }
 }

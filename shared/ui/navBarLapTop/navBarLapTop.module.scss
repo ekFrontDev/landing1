@@ -20,3 +20,9 @@
 .menuLink:hover {
     transform: translateY(-4px);
 }
+
+@media (max-width: 600px) {
+  .menuWrapper {
+    display: none;
+  }
+}

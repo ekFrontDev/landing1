@@ -8,19 +8,21 @@ const HomePage = () => {
   return (
     <>
       <main>
-        <div className="imageContainer">
-          <Image
-            className="portfolioArt"
-            src="/assets/portfolioArt/portfolioArt.jpg"
-            fill
-            sizes="(max-width: 768px) calc(100vw - 20px), 10vw"
-            // width={300}
-            // height={300}
-            style={{ objectFit: 'cover' }}
-            alt=""
-          />
+        <div className="imageFlex">
+          <div className="imageContainer">
+            <Image
+              className="portfolioArt"
+              src="/assets/portfolioArt/portfolioArt.jpg"
+              fill
+              sizes="(max-width: 768px) calc(100vw - 20px), 10vw"
+              // width={300}
+              // height={300}
+              style={{ objectFit: 'cover' }}
+              alt=""
+            />
+          </div>
+          <GreetingBlock />
         </div>
-        <GreetingBlock />
         <Technique />
         <ArtPreview />
       </main>
