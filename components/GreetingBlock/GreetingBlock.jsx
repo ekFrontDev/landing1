@@ -7,7 +7,7 @@ export default function GreetingBlock() {
   return (
     <section ref={ref} className={`${styles.greetingBlockSection} ${styles.aboutInvisible} ${isVisible ? styles.visible : ''}`}>
       <span className={styles.greetingBlock}>
-        ПРИВЕТ! Я <b>ТАТЬЯНА ТАБАЧОК.</b> ХУДОЖНИК ИЗ <b>САНКТ-ПЕТЕРБУРГА.</b>
+        <p>ПРИВЕТ! Я <b>ТАТЬЯНА ТАБАЧОК.</b> ХУДОЖНИК ИЗ <b>САНКТ-ПЕТЕРБУРГА.</b></p>
       </span>
       <span className={styles.greetingBlockContinue}>
         <b className={styles.boldText}>РОДИЛАСЬ</b> НА ДАЛЬНЕМ ВОСТОКЕ. <br />

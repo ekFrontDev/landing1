@@ -39,20 +39,22 @@
     justify-content: flex-end;
     font-weight: 700;
     font-size: var(--font-size-xl);
-    margin: 32px;
+    margin: 0;
   }
 
   .greetingBlock {
-    margin-bottom: 24px;
-    line-height: 0; 
+    margin-bottom: 0;
+    color: var(--bold-color);
+    margin: 0 32px 16px 32px;
+    line-height: var(--font-line-l);
   }
 
   .greetingBlockContinue {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-2xl);
     font-weight: 700;
     line-height: 2.5rem;
     text-align: justify;
-    color: var(--bold-color);
+    margin: 0 32px;
   }
 
   .boldText {

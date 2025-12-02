@@ -16,14 +16,14 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  margin: 1rem 1rem;
+  margin: 32px;
 }
 
 .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 1rem 0;
+  
 }
 
 .name {
@@ -57,18 +57,18 @@ header {
 }
 
 main {
-  margin: 1rem 1rem;
+  margin: 0 32px;
 }
 
 .imageFlex {
   display: flex;
-  margin: 0 24px 0 24px;
+  margin-bottom: 64px;
 }
 
 .imageContainer {
-    position: relative;
-    width: calc(100vw - 85rem);
-    height: calc(100vw - 85rem);
+  position: relative;
+  width: calc(100vw - 20px);
+  height: 881px;
 }
 
 

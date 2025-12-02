@@ -14,11 +14,12 @@
     border-right: 3px solid var(--primary-color);
     margin-right: 20px;
     padding-right: 20px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, color 0.2s;
 }
 
 .menuLink:hover {
     transform: translateY(-4px);
+    color: rgb(58, 16, 30);
 }
 
 @media (max-width: 600px) {
