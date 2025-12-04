@@ -22,10 +22,24 @@ const ArtItem = () => {
         <Button text="Закрыть" href="/gallery" />
       </div>
 
-      <div className={styles.description}>Wool, acrylic, cotton / 150х90 cm</div>
+      <div className={styles.description}>
+        Wool, acrylic, cotton / 150х90 cm
+      </div>
       <div className={styles.description}>/ 2023</div>
-      <Image className={styles.image} src={src} width={300} height={440} alt="" />
-      <Image className={styles.image} src={src} width={300} height={440} alt="" />
+      <Image
+        className={styles.image}
+        src={src}
+        width={300}
+        height={440}
+        alt=""
+      />
+      <Image
+        className={styles.image}
+        src={src}
+        width={300}
+        height={440}
+        alt=""
+      />
     </div>
   );
 };

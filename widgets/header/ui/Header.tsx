@@ -8,12 +8,19 @@ import NavBarLapTop from '@/shared/ui/navBarLapTop/NavBarLapTop';
 
 export default function Header() {
   const path = usePathname();
-  const isScribble = path === '/' ? '/assets/icons/menu.svg' : '/assets/icons/cross.svg';
+  const isScribble =
+    path === '/' ? '/assets/icons/menu.svg' : '/assets/icons/cross.svg';
   const isOpen = path === '/' ? '/menu' : '/';
   return (
     <header>
       <div className="navBar">
-        <Image className="scribble" src={scribbleUrl} width={25} height={25} alt="" />
+        <Image
+          className="scribble"
+          src={scribbleUrl}
+          width={25}
+          height={25}
+          alt=""
+        />
         <span className="name">( ТАТЬЯНА ТАБАЧОК )</span>
         <ThemeSwitcher />
         <Link className="iconMenu" href={isOpen}>

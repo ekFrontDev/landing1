@@ -10,7 +10,11 @@ const Gallery = () => {
       <div className={styles.artWrapper}>
         {galleryImages.map((el) => {
           return (
-            <Link key={el.id} className={styles.link} href={`/artItem/${el.id}`}>
+            <Link
+              key={el.id}
+              className={styles.link}
+              href={`/artItem/${el.id}`}
+            >
               <div>
                 <Image src={el.src} width={150} height={220} alt="" />
               </div>
