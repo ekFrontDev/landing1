@@ -4,7 +4,7 @@ import styles from './TechniqueLapTop.module.scss';
 const TechniqueLapTop = () => {
   return (
     <div className={styles.techniqueWrapper}>
-      <h3 className={styles.tittle}>(ТЕХНИКИ)</h3>
+      <h3 className={styles.title}>( ТЕХНИКИ )</h3>
       <ul className={styles.techniqueList}>
         <li className={`${styles.elem} ${styles.oil}`}>
           <TechniqueCard name="Масло" src="/assets/techniqueArts/масло.jpeg" />

@@ -1,13 +1,14 @@
-import styles from './techniqueCard.module.scss';
+import styles from './galleryCard.module.scss';
 import Image from 'next/image';
 import React from 'react';
 
-type techniqueCardProps = {
+type GalleryCardProps = {
   name: string;
   src: string;
+  sizes: string;
 };
 
-const TechniqueCard = ({ name, src }: techniqueCardProps) => {
+const GalleryCard = ({ name, src, sizes }: GalleryCardProps) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageWrapper}>
@@ -15,15 +16,12 @@ const TechniqueCard = ({ name, src }: techniqueCardProps) => {
           className={styles.image}
           src={src}
           fill
-          sizes="(max-width: 768px) 100vw, 33vw"
+          sizes={sizes}
           alt={name}
         />
-        <div className={styles.overlay}>
-          <span className={styles.name}>{name}</span>
-        </div>
       </div>
     </div>
   );
 };
 
-export default TechniqueCard;
+export default GalleryCard;

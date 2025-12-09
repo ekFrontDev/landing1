@@ -4,7 +4,7 @@
     border-top: 1px solid var(--inverted-bg-color);
 }
 
-.tittle {
+.title {
     font-size: var(--font-size-l);
     margin: 16px 0 16px 0;
     text-align: center;
@@ -34,6 +34,10 @@
 }
 
 @media (min-width: 1200px) {
+    .techniqueWrapper {
+        border-top: 2px solid var(--inverted-bg-color);
+    }
+
     .techniqueList {
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;

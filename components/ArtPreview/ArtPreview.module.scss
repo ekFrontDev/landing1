@@ -1,54 +1,53 @@
-.ArtPreviewTtile {
-  display: block;
-  margin: 2rem;
-  padding-top: 2rem;
-  border-top: var(--border-top);
-  text-align: center;
-  font-size: var(--font-size-l);
+.aboutInvisible {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+  opacity 0.7s ease,
+  transform 0.7s ease;
+  border-top: 1px solid var(--inverted-bg-color);
 }
 
-.artPreview {
-  display: flex;
-  margin: 0 2rem 0 2rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .artPreviewImg {
-    margin-bottom: 5rem;
-  }
+.ArtPreviewTitle {
+  font-size: var(--font-size-l);
+  margin: 16px 0 16px 0;
+  text-align: center;
 }
 
 .linkWrapper {
-  width: 35rem;
+  width: 250px;
   display: flex;
-  margin: 0 auto 0 auto;
-  border-radius: 1rem;
+  margin: 24px 0 24px auto;
   justify-content: center;
-  background-color: var(--inverted-bg-color);
-  .arrow {
-    margin: auto 0;
-  }
+  background-color: none;
+  border: 1px solid var(--inverted-bg-color);
 }
 
 .linkGallery {
-  color: var(--inverted-primary-color);
+  color: var(--primary-color);
   text-decoration: none;
   margin: 0;
-  padding: 1rem;
+  padding: 16px;
   font-size: var(--font-size-m);
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
 }
 
-.aboutInvisible {
-  opacity: 0;
-  transform: translateY(50px);
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
-}
-
 .visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (min-width: 1200px) {
+    .aboutInvisible {
+      border-top: 2px solid var(--inverted-bg-color);
+    }
+    .linkWrapper {
+      width: 300px;
+      border: 2px solid var(--inverted-bg-color);
+    }
+
+    .linkGallery {
+      font-size: var(--font-size-l);
+    }
 }
