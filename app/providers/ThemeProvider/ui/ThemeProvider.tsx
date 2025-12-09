@@ -1,6 +1,10 @@
 'use client';
 import React, { ReactNode, useMemo, useState, useEffect } from 'react';
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from '../lib/ThemeContext';
+import {
+  LOCAL_STORAGE_THEME_KEY,
+  Theme,
+  ThemeContext,
+} from '../lib/ThemeContext';
 
 interface ThemeProviderProps {
   children: ReactNode;
@@ -30,5 +34,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     return null;
   }
 
-  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
 }
