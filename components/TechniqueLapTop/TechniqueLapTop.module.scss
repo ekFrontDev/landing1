@@ -1,14 +1,45 @@
 .techniqueWrapper {
     width: 100%;
+    margin-bottom: 64px;
+    border-top: 1px solid var(--inverted-bg-color);
+}
+
+.tittle {
+    font-size: var(--font-size-l);
+    margin: 16px 0 16px 0;
+    text-align: center;
 }
 
 .techniqueList {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
 }
 
 .elem {
     display: block;
+}
+
+@media (min-width: 768px) {
+    .techniqueList {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .tittle {
+        font-size: var(--font-size-xl);
+        margin: 0 auto 24px 64px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .techniqueList {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .tittle {
+        font-size: var(--font-size-xl);
+        margin: 0 auto 24px 64px;
+    }
 }

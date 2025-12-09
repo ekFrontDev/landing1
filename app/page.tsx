@@ -11,7 +11,13 @@ const HomePage = () => {
       <main>
         <div className="imageFlex">
           <div className="imageContainer">
-            <Image className="portfolioArt" src="/assets/portfolioArt/portfolioArt.jpg" fill sizes="(max-width: 768px) calc(100vw - 20px), 10vw" style={{ objectFit: 'cover' }} alt="" />
+            <Image
+              className="portfolioArt"
+              src="/assets/portfolioArt/portfolioArt.jpg"
+              fill
+              sizes="(max-width: 768px) calc(100vw - 64px), 50vw"
+              alt=""
+            />
           </div>
           <GreetingBlock />
         </div>

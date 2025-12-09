@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   description: 'Художник и преподаватель изобразительного искусства',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="ru">
       <body>

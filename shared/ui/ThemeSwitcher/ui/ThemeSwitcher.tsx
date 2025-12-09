@@ -1,15 +1,18 @@
 import styles from './ThemeSwitcher.module.scss';
-import { Theme } from '@/app/providers/ThemeProvider';
 import { useTheme } from '@/app/providers/ThemeProvider/lib/useTheme';
-import { classNames } from '@/shared/lib/classNames/classNames';
 
 const ThemeSwitcher = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   return (
-    <button className={classNames(styles.ThemeSwitcher, {}, [])} onClick={toggleTheme} aria-label="Переключить тему">
-      {theme === Theme.LIGHT ? '☾' : '☀'}
-    </button>
+    <div className={styles.ThemeSwitcher}>
+      <input className={styles.checkbox} type="checkbox" id="darkmode-toogle" />
+      <label
+        className={styles.toggle}
+        htmlFor="darkmode-toogle"
+        onClick={toggleTheme}
+      ></label>
+    </div>
   );
 };
 

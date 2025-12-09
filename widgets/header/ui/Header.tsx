@@ -3,7 +3,6 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ThemeSwitcher } from '@/shared/ui/ThemeSwitcher';
-import scribbleUrl from '@/public/assets/icons/scribble.svg';
 import NavBarLapTop from '@/shared/ui/navBarLapTop/NavBarLapTop';
 
 export default function Header() {
@@ -14,13 +13,13 @@ export default function Header() {
   return (
     <header>
       <div className="navBar">
-        <Image
+        {/* <Image
           className="scribble"
           src={scribbleUrl}
           width={25}
           height={25}
           alt=""
-        />
+        /> */}
         <span className="name">( ТАТЬЯНА ТАБАЧОК )</span>
         <ThemeSwitcher />
         <Link className="iconMenu" href={isOpen}>

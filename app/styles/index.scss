@@ -16,7 +16,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  margin: 32px;
+  margin: 16px 32px;
 }
 
 .navBar {
@@ -84,15 +84,13 @@ main {
   
   .navBar {
     justify-content: space-between;
-    margin: 0 2rem;
+    margin: 0;
   }
     
   .name {
     display: inline;
-    padding: 0.5rem 0 0 2rem;
     margin: 0 auto 0 0;
     font-size: var(--font-size-l);
-    vertical-align: bottom;
   }
   .scribble {
     display: block;
@@ -107,18 +105,21 @@ main {
     display: block;
     margin: 0 auto;
     border-radius: 1rem;
+    object-fit: cover;
   }
 
   .imageContainer {
     position: relative;
-    width: calc(100vw - 6rem);
     height: calc(100vw - 6rem);
+    width: 100%;
     margin: 3rem auto;
     padding: 0 2rem;
     display: block;
+    aspect-ratio: 16 / 9;
 }
   .imageFlex {
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
   }
 }
