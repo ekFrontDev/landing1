@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import GreetingBlock from '../components/GreetingBlock/GreetingBlock';
-import Technique from '../components/Technique/Technique';
 import ArtPreview from '../components/ArtPreview/ArtPreview';
 import TechniqueLapTop from '@/components/TechniqueLapTop/TechniqueLapTop';
 
@@ -21,7 +20,6 @@ const HomePage = () => {
           </div>
           <GreetingBlock />
         </div>
-        <Technique />
         <TechniqueLapTop />
         <ArtPreview />
       </main>

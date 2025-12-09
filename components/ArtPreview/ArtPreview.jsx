@@ -9,7 +9,7 @@ export default function ArtPreview() {
   const [ref, isVisible] = useIntersectionObserver({ threshold: 0.1 });
   return (
     <section ref={ref} className={`${styles.aboutInvisible} ${isVisible ? styles.visible : ''}`}>
-      <h2 className={styles.ArtPreviewTitle}>( РАБОТЫ )</h2>
+      <h2 className={styles.ArtPreviewTitle}>( МОИ РАБОТЫ )</h2>
       <SwiperCard />
       <div className={styles.linkWrapper}>
         <Link className={styles.linkGallery} href="/gallery">

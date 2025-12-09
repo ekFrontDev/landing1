@@ -2,12 +2,14 @@
   text-decoration: none;
   color: #61686b;
   vertical-align: top;
+  margin: 12px 0;
 }
 
 .contacts {
   display: block;
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  color: var(--primary-color);
 }
 
 @media (max-width: 600px) {

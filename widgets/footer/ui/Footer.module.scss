@@ -1,28 +1,33 @@
 .footerWrapper {
-    margin: 5rem 2rem 0 2rem;
+    margin: 24px 32px 0 32px;
     padding: 2rem 1rem;
     max-width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border-top: 0.3rem solid #61686b90;
+    border-top: 1px solid var(--inverted-bg-color);
 }
+
+.contact {
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
 .linksContainer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 1rem 1rem 4rem 1rem;
 }
-.contactInst {
-    display: block;
-    width: 100px;
-    height: 100px;
-    font-size: 4rem;
-    position: relative;
-}
-.contacts {
-    display: block;
-    font-size: 3rem;
+
+.meta {
+    display: inline-block;
+    margin: 24px 0 0 auto;
+    color: var(--primary-color);
+    font-size: var(--font-size-m);
 }
 
 @media (max-width: 600px) {
@@ -31,8 +36,5 @@
     }
     .linksContainer {
         padding: 0;
-    }
-    .contactTG {
-        height: 10rem;
     }
 }
